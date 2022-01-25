@@ -1,0 +1,24 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/yiheng/桌面/Master2/os/X86'
+nasm boot/boot_sect.asm -f bin -I '/home/yiheng/桌面/Master2/os/X86/boot/' -o boot/boot_sect.bin
+nasm kernel/kernel_entry.asm -f elf -o kernel/kernel_entry.o
+gcc -m32 -fno-pie -fno-stack-protector -c kernel/kheap.c -o kernel/kheap.o
+nasm cpu/interrupt.asm -f elf -o cpu/interrupt.o
+nasm cpu/gdt_load.asm -f elf -o cpu/gdt_load.o
+gcc -m32 -fno-pie -fno-stack-protector -c kernel/kmem.c -o kernel/kmem.o
+gcc -m32 -fno-pie -fno-stack-protector -c kernel/trap.c -o kernel/trap.o
+gcc -m32 -fno-pie -fno-stack-protector -c kernel/low_level.c -o kernel/low_level.o
+gcc -m32 -fno-pie -fno-stack-protector -c kernel/paging.c -o kernel/paging.o
+gcc -m32 -fno-pie -fno-stack-protector -c kernel/util.c -o kernel/util.o
+gcc -m32 -fno-pie -fno-stack-protector -c kernel/kernel.c -o kernel/kernel.o
+gcc -m32 -fno-pie -fno-stack-protector -c drivers/screen.c -o drivers/screen.o
+gcc -m32 -fno-pie -fno-stack-protector -c drivers/keyboard.c -o drivers/keyboard.o
+gcc -m32 -fno-pie -fno-stack-protector -c cpu/isr.c -o cpu/isr.o
+gcc -m32 -fno-pie -fno-stack-protector -c cpu/idt.c -o cpu/idt.o
+gcc -m32 -fno-pie -fno-stack-protector -c cpu/timer.c -o cpu/timer.o
+gcc -m32 -fno-pie -fno-stack-protector -c cpu/gdt.c -o cpu/gdt.o
+gcc -m32 -fno-pie -fno-stack-protector -c libc/string.c -o libc/string.o
+ld -m elf_i386 -o kernel.bin -Tlink.lds kernel/kernel_entry.o kernel/kheap.o cpu/interrupt.o cpu/gdt_load.o kernel/kmem.o kernel/trap.o kernel/low_level.o kernel/paging.o kernel/util.o kernel/kernel.o drivers/screen.o drivers/keyboard.o cpu/isr.o cpu/idt.o cpu/timer.o cpu/gdt.o libc/string.o --oformat binary
+cat boot/boot_sect.bin kernel.bin > os-image
+make: Leaving directory '/home/yiheng/桌面/Master2/os/X86'
+ 

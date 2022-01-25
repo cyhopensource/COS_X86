@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "low_level.h": "c",
+        "util.h": "c",
+        "idt.h": "c",
+        "screen.h": "c",
+        "isr.h": "c",
+        "timer.h": "c",
+        "keyboard.h": "c",
+        "paging.h": "c",
+        "gdt.h": "c",
+        "string.h": "c"
+    }
+}

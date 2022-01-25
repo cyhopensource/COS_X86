@@ -1,0 +1,491 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon Jan 24 20:34:06 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+PAPERSIZE = a4
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 10)
+OBJ = ${C_SOURCES:.c=.o cpu/interrupt.o cpu/gdt_load.o}
+# environment
+XDG_SESSION_CLASS = user
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/yiheng/桌面/Master2/os/X86
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"641b9120268979c895e11c97f0a822f6.zh-cn","_translationsConfigFile":"/home/yiheng/.config/Code/clp/641b9120268979c895e11c97f0a822f6.zh-cn/tcf.json","_cacheRoot":"/home/yiheng/.config/Code/clp/641b9120268979c895e11c97f0a822f6.zh-cn","_resolvedLanguagePackCoreLocation":"/home/yiheng/.config/Code/clp/641b9120268979c895e11c97f0a822f6.zh-cn/c13f1abb110fc756f9b3a6f16670df9cd9d4cf63","_corruptedFile":"/home/yiheng/.config/Code/clp/641b9120268979c895e11c97f0a822f6.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/share/code/code
+# environment
+JOURNAL_STREAM = 8:50529
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# environment
+QSYS_ROOTDIR = /home/yiheng/intelFPGA_lite/20.1/quartus/sopc_builder/bin
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# environment
+USERNAME = yiheng
+# environment
+MAKELEVEL := 0
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/home/yiheng/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+MANAGERPID = 5382
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = zh_CN.UTF-8
+# environment
+VSCODE_CWD = /home/yiheng
+# environment
+AM_HOME = /home/yiheng/ics2020/abstract-machine
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/yiheng/.local/bin:/home/yiheng/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/openmpi/bin
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+SESSION_MANAGER = local/yiheng-Vostro-5468:@/tmp/.ICE-unix/5649,unix/yiheng-Vostro-5468:/tmp/.ICE-unix/5649
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=42df5b09-0c67-4bd7-89f0-6b60b77a7487&iid=42df5b09-0c67-4bd7-89f0-6b60b77a7487&sid=42df5b09-0c67-4bd7-89f0-6b60b77a7487","uploadToServer":true}
+# environment
+INVOCATION_ID = ccec344d3ddf4f5099c60cb19467f683
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 8217
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :1
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/yiheng/桌面/Master2/os/X86
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 5614
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /home/yiheng
+# environment
+LD_LIBRARY_PATH = :/usr/local/openmpi/lib/
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CODE_CACHE_PATH = /home/yiheng/.config/Code/CachedData/c13f1abb110fc756f9b3a6f16670df9cd9d4cf63
+# environment
+LOGNAME = yiheng
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
++F = $(notdir $+)
+# makefile (from 'Makefile', line 8)
+HEADERS = $(wildcard kernel/*.h drivers/*.h cpu/*.h libc/*.h common/*.h )
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+LC_TIME = zh_CN.UTF-8
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SHLVL = 0
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-bda21957-091f-4343-a76a-49a79e54ca87.sock
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = yiheng
+# environment
+LC_MONETARY = zh_CN.UTF-8
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = zh_CN.UTF-8
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = zh_CN:fr_FR:en
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-7c524508-1.61.1-main.sock
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+BREAKPAD_DUMP_LOCATION = /home/yiheng/.config/Code/exthost Crash Reports
+# environment
+NEMU_HOME = /home/yiheng/ics2020/nemu
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# environment
+LC_PAPER = zh_CN.UTF-8
+# environment
+QT_ACCESSIBILITY = 1
+# default
+MAKEFILES := 
+# environment
+LC_NUMERIC = zh_CN.UTF-8
+# automatic
+<F = $(notdir $<)
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+LC_MEASUREMENT = zh_CN.UTF-8
+# environment
+LC_ALL = C
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 7)
+C_SOURCES = $(wildcard kernel/*.c drivers/*.c cpu/*.c libc/*.c)
+# default
+SUFFIXES := 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 2
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+LC_IDENTIFICATION = zh_CN.UTF-8
+# default
+.RECIPEPREFIX := 
+# environment
+LC_ADDRESS = zh_CN.UTF-8
+# environment
+LANG = C
+# environment
+VSCODE_PID = 8217
+# variable set hash-table stats:
+# Load=117/1024=11%, Rehash=0, Collisions=22/148=15%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# libc (device 2068, inode 385565): 4 files, no impossibilities.
+# kernel (device 2068, inode 377640): 15 files, no impossibilities.
+# drivers (device 2068, inode 377641): 6 files, no impossibilities.
+# . (device 2068, inode 377555): 13 files, no impossibilities.
+# boot (device 2068, inode 377639): 9 files, no impossibilities so far.
+# common (device 2068, inode 385531): 4 files, no impossibilities.
+# cpu (device 2068, inode 377707): 12 files, no impossibilities.
+
+# 63 files, no impossibilities in 7 directories.
+
+# Implicit Rules
+
+%.bin: %.asm
+#  recipe to execute (from 'Makefile', line 23):
+	nasm $< -f bin -I '/home/yiheng/桌面/Master2/os/X86/boot/' -o $@
+
+%.o: %.asm
+#  recipe to execute (from 'Makefile', line 26):
+	nasm $< -f elf -o $@
+
+%.o: %.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h common/type.h common/system.h
+#  recipe to execute (from 'Makefile', line 30):
+	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
+
+# 3 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+os-image: boot/boot_sect.bin kernel.bin
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+ 
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+#  recipe to execute (from 'Makefile', line 13):
+	cat $^ > os-image
+
+all: os-image
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+
+# Not a target:
+cpu/timer.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+boot/boot_sect.asm:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-22 20:29:17.204815969
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-23 11:03:30.932200637
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+drivers/screen.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+cpu/idt.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/kernel.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+kernel.bin: kernel/kernel_entry.o kernel/kheap.o cpu/interrupt.o cpu/gdt_load.o kernel/kmem.o cpu/interrupt.o cpu/gdt_load.o kernel/trap.o cpu/interrupt.o cpu/gdt_load.o kernel/low_level.o cpu/interrupt.o cpu/gdt_load.o kernel/paging.o cpu/interrupt.o cpu/gdt_load.o kernel/util.o cpu/interrupt.o cpu/gdt_load.o kernel/kernel.o cpu/interrupt.o cpu/gdt_load.o drivers/screen.o cpu/interrupt.o cpu/gdt_load.o drivers/keyboard.o cpu/interrupt.o cpu/gdt_load.o cpu/isr.o cpu/interrupt.o cpu/gdt_load.o cpu/idt.o cpu/interrupt.o cpu/gdt_load.o cpu/timer.o cpu/interrupt.o cpu/gdt_load.o cpu/gdt.o cpu/interrupt.o cpu/gdt_load.o libc/string.o cpu/interrupt.o cpu/gdt_load.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 20):
+	ld -m elf_i386 -o $@ -Tlink.lds $^ --oformat binary
+
+# Not a target:
+cpu/isr.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+cpu/gdt_load.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/low_level.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/kheap.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/util.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/kernel_entry.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+boot/boot_sect.bin: boot/boot_sect.asm
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'boot/boot_sect'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := boot/boot_sect.bin
+# automatic
+# % := 
+# automatic
+# * := boot/boot_sect
+# automatic
+# + := boot/boot_sect.asm
+# automatic
+# | := 
+# automatic
+# < := boot/boot_sect.asm
+# automatic
+# ^ := boot/boot_sect.asm
+# automatic
+# ? := boot/boot_sect.asm
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
+#  recipe to execute (from 'Makefile', line 23):
+	nasm $< -f bin -I '/home/yiheng/桌面/Master2/os/X86/boot/' -o $@
+
+# Not a target:
+libc/string.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+run: all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 5):
+	qemu-system-i386 -fda os-image
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 33):
+	rm -fr *.bin *.dis *.o os-image
+	rm -fr kernel/*.o boot/*.bin drivers/*.o cpu/*.o libc/*.o
+
+# Not a target:
+kernel/kmem.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+drivers/keyboard.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+cpu/gdt.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/trap.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+cpu/interrupt.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel/paging.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=27/1024=3%, Rehash=0, Collisions=0/90=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 98 / storage = 1064 B / avg = 10 B
+# current buf: size = 8162 B / used = 1064 B / count = 98 / avg = 10 B
+
+# strcache performance: lookups = 158 / hit rate = 37%
+# hash-table stats:
+# Load=98/8192=1%, Rehash=0, Collisions=8/158=5%
+# Finished Make data base on Mon Jan 24 20:34:06 2022
+
+ 
