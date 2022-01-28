@@ -1,3 +1,6 @@
+#ifndef _SCREEN_H_
+#define _SCREEN_H_
+
 #define VIDEO_ADDRESS 0xb8000
 #define MAX_ROWS 25
 #define MAX_COLS 80
@@ -11,3 +14,5 @@
 void printk(char* message);
 void printk_hex(unsigned short num);
 void clear_screen();
+
+#endif

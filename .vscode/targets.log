@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jan 24 20:34:06 2022
+# Make data base, printed on Fri Jan 28 17:55:08 2022
 
 # Variables
 
@@ -51,7 +51,7 @@ VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_langu
 # environment
 _ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 8:50529
+JOURNAL_STREAM = 8:52576
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -73,7 +73,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 5382
+MANAGERPID = 4469
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -91,7 +91,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-SESSION_MANAGER = local/yiheng-Vostro-5468:@/tmp/.ICE-unix/5649,unix/yiheng-Vostro-5468:/tmp/.ICE-unix/5649
+SESSION_MANAGER = local/yiheng-Vostro-5468:@/tmp/.ICE-unix/4741,unix/yiheng-Vostro-5468:/tmp/.ICE-unix/4741
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -101,7 +101,7 @@ VSCODE_LOG_STACK = false
 # environment
 VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=42df5b09-0c67-4bd7-89f0-6b60b77a7487&iid=42df5b09-0c67-4bd7-89f0-6b60b77a7487&sid=42df5b09-0c67-4bd7-89f0-6b60b77a7487","uploadToServer":true}
 # environment
-INVOCATION_ID = ccec344d3ddf4f5099c60cb19467f683
+INVOCATION_ID = 333c4942777949b8b8c8bbbf9b9363cf
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -111,7 +111,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 8217
+GIO_LAUNCHED_DESKTOP_FILE_PID = 7198
 # automatic
 %F = $(notdir $%)
 # environment
@@ -123,7 +123,7 @@ PWD = /home/yiheng/桌面/Master2/os/X86
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 5614
+SSH_AGENT_PID = 4707
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -165,7 +165,7 @@ SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-bda21957-091f-4343-a76a-49a79e54ca87.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-5495e94f-f479-48b1-8859-a9728b6d5eca.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -243,7 +243,7 @@ LC_ADDRESS = zh_CN.UTF-8
 # environment
 LANG = C
 # environment
-VSCODE_PID = 8217
+VSCODE_PID = 7198
 # variable set hash-table stats:
 # Load=117/1024=11%, Rehash=0, Collisions=22/148=15%
 
@@ -256,12 +256,12 @@ VSCODE_PID = 8217
 # libc (device 2068, inode 385565): 4 files, no impossibilities.
 # kernel (device 2068, inode 377640): 15 files, no impossibilities.
 # drivers (device 2068, inode 377641): 6 files, no impossibilities.
-# . (device 2068, inode 377555): 13 files, no impossibilities.
+# . (device 2068, inode 377555): 14 files, no impossibilities.
 # boot (device 2068, inode 377639): 9 files, no impossibilities so far.
 # common (device 2068, inode 385531): 4 files, no impossibilities.
 # cpu (device 2068, inode 377707): 12 files, no impossibilities.
 
-# 63 files, no impossibilities in 7 directories.
+# 64 files, no impossibilities in 7 directories.
 
 # Implicit Rules
 
@@ -287,7 +287,6 @@ os-image: boot/boot_sect.bin kernel.bin
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 #  recipe to execute (from 'Makefile', line 13):
 	cat $^ > os-image
@@ -295,6 +294,7 @@ os-image: boot/boot_sect.bin kernel.bin
 all: os-image
 #  Command line target.
 #  Implicit rule search has been done.
+ 
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
@@ -480,12 +480,12 @@ kernel/paging.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 98 / storage = 1064 B / avg = 10 B
-# current buf: size = 8162 B / used = 1064 B / count = 98 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 99 / storage = 1069 B / avg = 10 B
+# current buf: size = 8162 B / used = 1069 B / count = 99 / avg = 10 B
 
-# strcache performance: lookups = 158 / hit rate = 37%
+# strcache performance: lookups = 159 / hit rate = 37%
 # hash-table stats:
-# Load=98/8192=1%, Rehash=0, Collisions=8/158=5%
-# Finished Make data base on Mon Jan 24 20:34:06 2022
+# Load=99/8192=1%, Rehash=0, Collisions=8/159=5%
+# Finished Make data base on Fri Jan 28 17:55:08 2022
 
  
