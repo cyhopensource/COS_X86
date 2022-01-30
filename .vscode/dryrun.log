@@ -18,7 +18,8 @@ gcc -m32 -fno-pie -fno-stack-protector -c cpu/idt.c -o cpu/idt.o
 gcc -m32 -fno-pie -fno-stack-protector -c cpu/timer.c -o cpu/timer.o
 gcc -m32 -fno-pie -fno-stack-protector -c cpu/gdt.c -o cpu/gdt.o
 gcc -m32 -fno-pie -fno-stack-protector -c libc/string.c -o libc/string.o
-ld -m elf_i386 -o kernel.bin -Tlink.lds kernel/kernel_entry.o kernel/kheap.o cpu/interrupt.o cpu/gdt_load.o kernel/kmem.o kernel/trap.o kernel/low_level.o kernel/paging.o kernel/util.o kernel/kernel.o drivers/screen.o drivers/keyboard.o cpu/isr.o cpu/idt.o cpu/timer.o cpu/gdt.o libc/string.o --oformat binary
+gcc -m32 -fno-pie -fno-stack-protector -c libc/math.c -o libc/math.o
+ld -m elf_i386 -o kernel.bin -Tlink.lds kernel/kernel_entry.o kernel/kheap.o cpu/interrupt.o cpu/gdt_load.o kernel/kmem.o kernel/trap.o kernel/low_level.o kernel/paging.o kernel/util.o kernel/kernel.o drivers/screen.o drivers/keyboard.o cpu/isr.o cpu/idt.o cpu/timer.o cpu/gdt.o libc/string.o libc/math.o --oformat binary
 cat boot/boot_sect.bin kernel.bin > os-image
 make: Leaving directory '/home/yiheng/桌面/Master2/os/X86'
  

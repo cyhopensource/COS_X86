@@ -77,6 +77,17 @@ void alloc_frame(page_t *page, int is_kernel, int is_writable){
     }    
 }
 
+// free the physic frame to be availble
+void free_frame(page_t* page){
+    u32int frame;
+    if(!(frame = page -> frame)){
+        return;
+    }else{
+        clear_frame(frame);
+        page -> frame = 0x0;  // free page.
+    }
+}
+
 // virtual page.
 page_t* get_page(u32int addr, int make, page_directory_t *dir){
     //printk("Getting page\n");
@@ -156,7 +167,7 @@ void init_paging(){
     printk_hex(free_addr);
     printk(" ");
     int i = 0;
-    while(i < 0x400000){  // the number of page
+    while(i < 0xC00000){  // the number of page
         alloc_frame(get_page(i, 1, kernel_directory), 0, 0);
         i += 0x1000;
     }

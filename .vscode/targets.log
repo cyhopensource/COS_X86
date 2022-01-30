@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jan 28 17:55:08 2022
+# Make data base, printed on Mon Jan 31 00:22:24 2022
 
 # Variables
 
@@ -51,7 +51,7 @@ VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_langu
 # environment
 _ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 8:52576
+JOURNAL_STREAM = 8:52251
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -73,7 +73,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 4469
+MANAGERPID = 2703
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -91,7 +91,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-SESSION_MANAGER = local/yiheng-Vostro-5468:@/tmp/.ICE-unix/4741,unix/yiheng-Vostro-5468:/tmp/.ICE-unix/4741
+SESSION_MANAGER = local/yiheng-Vostro-5468:@/tmp/.ICE-unix/3626,unix/yiheng-Vostro-5468:/tmp/.ICE-unix/3626
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -101,7 +101,7 @@ VSCODE_LOG_STACK = false
 # environment
 VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=42df5b09-0c67-4bd7-89f0-6b60b77a7487&iid=42df5b09-0c67-4bd7-89f0-6b60b77a7487&sid=42df5b09-0c67-4bd7-89f0-6b60b77a7487","uploadToServer":true}
 # environment
-INVOCATION_ID = 333c4942777949b8b8c8bbbf9b9363cf
+INVOCATION_ID = 99d674fc8ea5405a96a9be71701ccdaf
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -111,7 +111,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 7198
+GIO_LAUNCHED_DESKTOP_FILE_PID = 7991
 # automatic
 %F = $(notdir $%)
 # environment
@@ -123,7 +123,7 @@ PWD = /home/yiheng/桌面/Master2/os/X86
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 4707
+SSH_AGENT_PID = 3586
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -165,7 +165,7 @@ SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-5495e94f-f479-48b1-8859-a9728b6d5eca.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-d823e55d-b255-44fe-ad8a-8ec312872fc7.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -243,7 +243,7 @@ LC_ADDRESS = zh_CN.UTF-8
 # environment
 LANG = C
 # environment
-VSCODE_PID = 7198
+VSCODE_PID = 7991
 # variable set hash-table stats:
 # Load=117/1024=11%, Rehash=0, Collisions=22/148=15%
 
@@ -253,15 +253,15 @@ VSCODE_PID = 7198
 
 # Directories
 
-# libc (device 2068, inode 385565): 4 files, no impossibilities.
+# libc (device 2068, inode 385565): 6 files, no impossibilities.
 # kernel (device 2068, inode 377640): 15 files, no impossibilities.
 # drivers (device 2068, inode 377641): 6 files, no impossibilities.
-# . (device 2068, inode 377555): 14 files, no impossibilities.
+# . (device 2068, inode 377555): 15 files, no impossibilities.
 # boot (device 2068, inode 377639): 9 files, no impossibilities so far.
-# common (device 2068, inode 385531): 4 files, no impossibilities.
+# common (device 2068, inode 385531): 6 files, no impossibilities.
 # cpu (device 2068, inode 377707): 12 files, no impossibilities.
 
-# 64 files, no impossibilities in 7 directories.
+# 69 files, no impossibilities in 7 directories.
 
 # Implicit Rules
 
@@ -273,13 +273,19 @@ VSCODE_PID = 7198
 #  recipe to execute (from 'Makefile', line 26):
 	nasm $< -f elf -o $@
 
-%.o: %.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h common/type.h common/system.h
+%.o: %.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h libc/math.h common/type.h common/system.h common/ordered_array.h
 #  recipe to execute (from 'Makefile', line 30):
 	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
 
 # 3 implicit rules, 0 (0.0%) terminal.
 
 # Files
+
+# Not a target:
+libc/math.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 os-image: boot/boot_sect.bin kernel.bin
 #  Implicit rule search has not been done.
@@ -289,12 +295,12 @@ os-image: boot/boot_sect.bin kernel.bin
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 #  recipe to execute (from 'Makefile', line 13):
+ 
 	cat $^ > os-image
 
 all: os-image
 #  Command line target.
 #  Implicit rule search has been done.
- 
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
@@ -339,7 +345,7 @@ kernel/kernel.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-kernel.bin: kernel/kernel_entry.o kernel/kheap.o cpu/interrupt.o cpu/gdt_load.o kernel/kmem.o cpu/interrupt.o cpu/gdt_load.o kernel/trap.o cpu/interrupt.o cpu/gdt_load.o kernel/low_level.o cpu/interrupt.o cpu/gdt_load.o kernel/paging.o cpu/interrupt.o cpu/gdt_load.o kernel/util.o cpu/interrupt.o cpu/gdt_load.o kernel/kernel.o cpu/interrupt.o cpu/gdt_load.o drivers/screen.o cpu/interrupt.o cpu/gdt_load.o drivers/keyboard.o cpu/interrupt.o cpu/gdt_load.o cpu/isr.o cpu/interrupt.o cpu/gdt_load.o cpu/idt.o cpu/interrupt.o cpu/gdt_load.o cpu/timer.o cpu/interrupt.o cpu/gdt_load.o cpu/gdt.o cpu/interrupt.o cpu/gdt_load.o libc/string.o cpu/interrupt.o cpu/gdt_load.o
+kernel.bin: kernel/kernel_entry.o kernel/kheap.o cpu/interrupt.o cpu/gdt_load.o kernel/kmem.o cpu/interrupt.o cpu/gdt_load.o kernel/trap.o cpu/interrupt.o cpu/gdt_load.o kernel/low_level.o cpu/interrupt.o cpu/gdt_load.o kernel/paging.o cpu/interrupt.o cpu/gdt_load.o kernel/util.o cpu/interrupt.o cpu/gdt_load.o kernel/kernel.o cpu/interrupt.o cpu/gdt_load.o drivers/screen.o cpu/interrupt.o cpu/gdt_load.o drivers/keyboard.o cpu/interrupt.o cpu/gdt_load.o cpu/isr.o cpu/interrupt.o cpu/gdt_load.o cpu/idt.o cpu/interrupt.o cpu/gdt_load.o cpu/timer.o cpu/interrupt.o cpu/gdt_load.o cpu/gdt.o cpu/interrupt.o cpu/gdt_load.o libc/string.o cpu/interrupt.o cpu/gdt_load.o libc/math.o cpu/interrupt.o cpu/gdt_load.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -473,19 +479,19 @@ kernel/paging.o:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=27/1024=3%, Rehash=0, Collisions=0/90=0%
+# Load=28/1024=3%, Rehash=0, Collisions=0/94=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 99 / storage = 1069 B / avg = 10 B
-# current buf: size = 8162 B / used = 1069 B / count = 99 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 107 / storage = 1170 B / avg = 10 B
+# current buf: size = 8162 B / used = 1170 B / count = 107 / avg = 10 B
 
-# strcache performance: lookups = 159 / hit rate = 37%
+# strcache performance: lookups = 169 / hit rate = 36%
 # hash-table stats:
-# Load=99/8192=1%, Rehash=0, Collisions=8/159=5%
-# Finished Make data base on Fri Jan 28 17:55:08 2022
+# Load=107/8192=1%, Rehash=0, Collisions=9/169=5%
+# Finished Make data base on Mon Jan 31 00:22:24 2022
 
  

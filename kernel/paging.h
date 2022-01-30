@@ -32,4 +32,6 @@ void switch_page_directory(page_directory_t *new_page_dir);
 
 page_t* get_page(unsigned int addr, int make, page_directory_t *dir);
 
+void alloc_frame(page_t *page, int is_kernel, int is_writable);
+
 #endif

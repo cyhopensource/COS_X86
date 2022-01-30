@@ -29,11 +29,12 @@ typedef struct{
     u8int readonly;    // high addr in struct
 } heap_t;
 
-header_t *create_heap(u32int start, u32int end, u32int max, u8int super, u8int readonly);
+heap_t *create_heap(u32int start, u32int end, u32int max, u8int super, u8int readonly);
 
 void *alloc(u32int size, u8int page_align, heap_t *heap);
 
 void free(void *p, header_t *heap);
 
 #endif
+
 
