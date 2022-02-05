@@ -1,6 +1,7 @@
 #ifndef PAGING_H
 #define PAGING_H
 
+// 32 bit
 typedef struct page{
     unsigned int present  :1;
     unsigned int rw       :1;
@@ -18,7 +19,7 @@ typedef struct page_table{
 
 // 2-level
 typedef struct page_directory{
-    page_table_t* tables[1024];
+    page_table_t* tables[1024];   // 1024 * 1024
     //page_table_t* tables[16];
     //unsigned int tablePhysical[1024];
     unsigned int tablePhysical[16];

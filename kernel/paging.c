@@ -1,6 +1,7 @@
 #include "paging.h"
 #include "kmem.h"
 #include "util.h"
+#include "kheap.h"
 #include "../common/type.h"
 #include "../common/system.h"
 #include "../cpu/isr.h"
@@ -13,6 +14,7 @@ page_directory_t* kernel_directory;
 page_directory_t* current_directory;
 
 extern u32int free_addr;
+extern heap_t* kheap;
 
 #define INDEX_FROM_BIT(a) (a/(8*4))
 #define OFFSET_FROM_BIT(a) (a%(8*4))
@@ -141,7 +143,6 @@ void switch_page_directory(page_directory_t *dir){
 void init_paging(){
     
     // 16M
-    //u32int mem_end_page = 0x1000000;
     u32int mem_end_page = 0x1000000;
 
     printk("Initialising paging...");
@@ -167,15 +168,23 @@ void init_paging(){
     printk_hex(free_addr);
     printk(" ");
     int i = 0;
-    while(i < 0xC00000){  // the number of page
+    while(i < 0x600000){  // the number of page
         alloc_frame(get_page(i, 1, kernel_directory), 0, 0);
         i += 0x1000;
     }
 
+    i = 0;
+    for(i = KHEAP_START; i < KHEAP_START + KHEAP_INIT_SIZE; i+= 0x1000)
+        get_page(i, 1, kernel_directory);
+
+    for(i = KHEAP_START; i < KHEAP_START + KHEAP_INIT_SIZE; i += 0x1000)
+        alloc_frame(get_page(i ,1, kernel_directory), 0, 0);
     
     register_interrupt_handle(14, page_fault);
 
     switch_page_directory(kernel_directory);
+
+    kheap = create_heap(KHEAP_START, KHEAP_START + KHEAP_INIT_SIZE, 0xCFFFF000, 0, 0);
 
     printk("ok\n");
     

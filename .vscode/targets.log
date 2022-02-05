@@ -1,70 +1,135 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # GNU Make 4.2.1
+ 
 # Built for x86_64-pc-linux-gnu
+ 
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
+ 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+ 
 # This is free software: you are free to change and redistribute it.
+ 
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Mon Jan 31 00:22:24 2022
+ 
+# Make data base, printed on Sat Feb  5 17:23:47 2022
+ 
 
 # Variables
+ 
 
+ 
 # 'override' directive
+ 
 GNUMAKEFLAGS := 
+ 
 # automatic
+ 
 <D = $(patsubst %/,%,$(dir $<))
+ 
 # automatic
+ 
 ?F = $(notdir $?)
+ 
 # environment
+ 
 PAPERSIZE = a4
+ 
 # environment
+ 
 DESKTOP_SESSION = ubuntu
+ 
 # default
+ 
 .SHELLFLAGS := -c
+ 
 # makefile (from 'Makefile', line 10)
+ 
 OBJ = ${C_SOURCES:.c=.o cpu/interrupt.o cpu/gdt_load.o}
+ 
 # environment
+ 
 XDG_SESSION_CLASS = user
+ 
 # environment
+ 
 XDG_SESSION_TYPE = x11
+ 
 # environment
+ 
 VSCODE_LOG_NATIVE = false
+ 
 # automatic
+ 
 ?D = $(patsubst %/,%,$(dir $?))
+ 
 # environment
+ 
 IM_CONFIG_PHASE = 1
+ 
 # automatic
+ 
 @D = $(patsubst %/,%,$(dir $@))
+ 
 # environment
+ 
 XAUTHORITY = /run/user/1000/gdm/Xauthority
+ 
 # environment
+ 
 GDMSESSION = ubuntu
+ 
 # environment
+ 
 XMODIFIERS = @im=ibus
+ 
 # makefile
+ 
 CURDIR := /home/yiheng/桌面/Master2/os/X86
+ 
 # makefile
+ 
 SHELL = /bin/sh
+ 
 # environment
+ 
 VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"641b9120268979c895e11c97f0a822f6.zh-cn","_translationsConfigFile":"/home/yiheng/.config/Code/clp/641b9120268979c895e11c97f0a822f6.zh-cn/tcf.json","_cacheRoot":"/home/yiheng/.config/Code/clp/641b9120268979c895e11c97f0a822f6.zh-cn","_resolvedLanguagePackCoreLocation":"/home/yiheng/.config/Code/clp/641b9120268979c895e11c97f0a822f6.zh-cn/c13f1abb110fc756f9b3a6f16670df9cd9d4cf63","_corruptedFile":"/home/yiheng/.config/Code/clp/641b9120268979c895e11c97f0a822f6.zh-cn/corrupted.info","_languagePackSupport":true}
+ 
 # environment
+ 
 _ = /usr/share/code/code
+ 
 # environment
-JOURNAL_STREAM = 8:52251
+ 
+JOURNAL_STREAM = 8:48762
+ 
 # environment
+ 
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+ 
 # environment
+ 
 QSYS_ROOTDIR = /home/yiheng/intelFPGA_lite/20.1/quartus/sopc_builder/bin
+ 
 # makefile (from 'Makefile', line 1)
+ 
 MAKEFILE_LIST :=  Makefile
+ 
 # automatic
+ 
 @F = $(notdir $@)
+ 
 # environment
+ 
 GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+ 
 # environment
+ 
 USERNAME = yiheng
+ 
 # environment
+ 
 MAKELEVEL := 0
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/home/yiheng/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
@@ -73,7 +138,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 2703
+MANAGERPID = 3940
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -91,7 +156,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-SESSION_MANAGER = local/yiheng-Vostro-5468:@/tmp/.ICE-unix/3626,unix/yiheng-Vostro-5468:/tmp/.ICE-unix/3626
+SESSION_MANAGER = local/yiheng-Vostro-5468:@/tmp/.ICE-unix/4208,unix/yiheng-Vostro-5468:/tmp/.ICE-unix/4208
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -101,7 +166,7 @@ VSCODE_LOG_STACK = false
 # environment
 VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=42df5b09-0c67-4bd7-89f0-6b60b77a7487&iid=42df5b09-0c67-4bd7-89f0-6b60b77a7487&sid=42df5b09-0c67-4bd7-89f0-6b60b77a7487","uploadToServer":true}
 # environment
-INVOCATION_ID = 99d674fc8ea5405a96a9be71701ccdaf
+INVOCATION_ID = 94b86e5bb1d8402cb6a024e88f932db1
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -111,7 +176,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 7991
+GIO_LAUNCHED_DESKTOP_FILE_PID = 21642
 # automatic
 %F = $(notdir $%)
 # environment
@@ -123,7 +188,7 @@ PWD = /home/yiheng/桌面/Master2/os/X86
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 3586
+SSH_AGENT_PID = 4174
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -145,7 +210,7 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # automatic
 +F = $(notdir $+)
 # makefile (from 'Makefile', line 8)
-HEADERS = $(wildcard kernel/*.h drivers/*.h cpu/*.h libc/*.h common/*.h )
+HEADERS = $(wildcard kernel/*.h drivers/*.h cpu/*.h libc/*.h common/*.h)
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # environment
@@ -165,7 +230,7 @@ SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-d823e55d-b255-44fe-ad8a-8ec312872fc7.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b4be79a6-16f1-444f-b25e-32aa48346725.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -225,7 +290,7 @@ GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # automatic
 ^F = $(notdir $^)
 # makefile (from 'Makefile', line 7)
-C_SOURCES = $(wildcard kernel/*.c drivers/*.c cpu/*.c libc/*.c)
+C_SOURCES = $(wildcard kernel/*.c drivers/*.c cpu/*.c libc/*.c common/*.c)
 # default
 SUFFIXES := 
 # environment
@@ -243,7 +308,7 @@ LC_ADDRESS = zh_CN.UTF-8
 # environment
 LANG = C
 # environment
-VSCODE_PID = 7991
+VSCODE_PID = 21642
 # variable set hash-table stats:
 # Load=117/1024=11%, Rehash=0, Collisions=22/148=15%
 
@@ -253,15 +318,15 @@ VSCODE_PID = 7991
 
 # Directories
 
-# libc (device 2068, inode 385565): 6 files, no impossibilities.
-# kernel (device 2068, inode 377640): 15 files, no impossibilities.
-# drivers (device 2068, inode 377641): 6 files, no impossibilities.
+# libc (device 2068, inode 385565): 8 files, no impossibilities.
+# kernel (device 2068, inode 377640): 23 files, no impossibilities.
+# drivers (device 2068, inode 377641): 8 files, no impossibilities.
 # . (device 2068, inode 377555): 15 files, no impossibilities.
-# boot (device 2068, inode 377639): 9 files, no impossibilities so far.
-# common (device 2068, inode 385531): 6 files, no impossibilities.
-# cpu (device 2068, inode 377707): 12 files, no impossibilities.
+# boot (device 2068, inode 377639): 10 files, no impossibilities so far.
+# common (device 2068, inode 385531): 7 files, no impossibilities.
+# cpu (device 2068, inode 377707): 18 files, no impossibilities.
 
-# 69 files, no impossibilities in 7 directories.
+# 89 files, no impossibilities in 7 directories.
 
 # Implicit Rules
 
@@ -281,11 +346,14 @@ VSCODE_PID = 7991
 
 # Files
 
-# Not a target:
-libc/math.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+libc/math.o: libc/math.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h libc/math.h common/type.h common/system.h common/ordered_array.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'libc/math'
+#  Last modified 2022-02-05 17:22:49.183114473
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
 
 os-image: boot/boot_sect.bin kernel.bin
 #  Implicit rule search has not been done.
@@ -295,10 +363,53 @@ os-image: boot/boot_sect.bin kernel.bin
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 #  recipe to execute (from 'Makefile', line 13):
- 
 	cat $^ > os-image
 
+# Not a target:
+kernel/low_level.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-28 18:59:14.901010656
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/kmem.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-22 17:57:15.633042034
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/kheap.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-05 17:14:37.975106249
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/util.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-28 18:17:15.348981655
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+drivers/keyboard.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-23 10:55:25.788222419
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+cpu/gdt.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-23 10:59:21.812211822
+#  File has been updated.
+#  Successfully updated.
+
+ 
 all: os-image
+ 
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
@@ -308,10 +419,68 @@ all: os-image
 # Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 
 # Not a target:
-cpu/timer.o:
+kernel/trap.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-21 15:47:14.418287734
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+libc/string.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-23 10:50:11.088236549
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/kmem.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-28 18:16:21.460981034
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+common/ordered_array.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-05 17:15:02.095106653
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+drivers/keyboard.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-22 00:32:00.738596326
+#  File has been updated.
+#  Successfully updated.
+
+cpu/timer.o: cpu/timer.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h libc/math.h common/type.h common/system.h common/ordered_array.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'cpu/timer'
+#  Last modified 2022-02-05 17:22:49.119114471
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
+
+# Not a target:
+cpu/gdt.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-22 13:30:32.525438646
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.SUFFIXES:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+# Not a target:
+kernel/paging.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-05 17:06:31.179098099
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 boot/boot_sect.asm:
@@ -323,64 +492,160 @@ boot/boot_sect.asm:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-23 11:03:30.932200637
+#  Last modified 2022-02-05 17:22:54.955114569
+#  File has been updated.
+#  Successfully updated.
+
+common/ordered_map.o: common/ordered_map.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h libc/math.h common/type.h common/system.h common/ordered_array.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'common/ordered_map'
+#  Last modified 2022-02-05 17:22:48.803114466
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
+
+# Not a target:
+cpu/gdt_load.asm:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-22 13:22:40.033450356
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
-drivers/screen.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+libc/math.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-28 18:58:31.449010156
+#  File has been updated.
+#  Successfully updated.
+
+drivers/screen.o: drivers/screen.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h libc/math.h common/type.h common/system.h common/ordered_array.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'drivers/screen'
+#  Last modified 2022-02-05 17:22:49.01511447
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
+
+cpu/idt.o: cpu/idt.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h libc/math.h common/type.h common/system.h common/ordered_array.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'cpu/idt'
+#  Last modified 2022-02-05 17:22:49.091114471
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
 
 # Not a target:
-cpu/idt.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+kernel/paging.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-29 00:11:21.049226201
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-kernel/kernel.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+kernel/kernel_entry.asm:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-19 21:28:06.668
+#  File has been updated.
+#  Successfully updated.
 
-kernel.bin: kernel/kernel_entry.o kernel/kheap.o cpu/interrupt.o cpu/gdt_load.o kernel/kmem.o cpu/interrupt.o cpu/gdt_load.o kernel/trap.o cpu/interrupt.o cpu/gdt_load.o kernel/low_level.o cpu/interrupt.o cpu/gdt_load.o kernel/paging.o cpu/interrupt.o cpu/gdt_load.o kernel/util.o cpu/interrupt.o cpu/gdt_load.o kernel/kernel.o cpu/interrupt.o cpu/gdt_load.o drivers/screen.o cpu/interrupt.o cpu/gdt_load.o drivers/keyboard.o cpu/interrupt.o cpu/gdt_load.o cpu/isr.o cpu/interrupt.o cpu/gdt_load.o cpu/idt.o cpu/interrupt.o cpu/gdt_load.o cpu/timer.o cpu/interrupt.o cpu/gdt_load.o cpu/gdt.o cpu/interrupt.o cpu/gdt_load.o libc/string.o cpu/interrupt.o cpu/gdt_load.o libc/math.o cpu/interrupt.o cpu/gdt_load.o
+kernel/kernel.o: kernel/kernel.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h libc/math.h common/type.h common/system.h common/ordered_array.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'kernel/kernel'
+#  Last modified 2022-02-05 17:22:48.987114469
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
+
+kernel.bin: kernel/kernel_entry.o kernel/kheap.o cpu/interrupt.o cpu/gdt_load.o kernel/kmem.o cpu/interrupt.o cpu/gdt_load.o kernel/trap.o cpu/interrupt.o cpu/gdt_load.o kernel/low_level.o cpu/interrupt.o cpu/gdt_load.o kernel/paging.o cpu/interrupt.o cpu/gdt_load.o kernel/util.o cpu/interrupt.o cpu/gdt_load.o kernel/kernel.o cpu/interrupt.o cpu/gdt_load.o drivers/screen.o cpu/interrupt.o cpu/gdt_load.o drivers/keyboard.o cpu/interrupt.o cpu/gdt_load.o cpu/isr.o cpu/interrupt.o cpu/gdt_load.o cpu/idt.o cpu/interrupt.o cpu/gdt_load.o cpu/timer.o cpu/interrupt.o cpu/gdt_load.o cpu/gdt.o cpu/interrupt.o cpu/gdt_load.o libc/string.o cpu/interrupt.o cpu/gdt_load.o libc/math.o cpu/interrupt.o cpu/gdt_load.o common/ordered_map.o cpu/interrupt.o cpu/gdt_load.o
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := kernel.bin
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := kernel/kernel_entry.o kernel/kheap.o cpu/interrupt.o cpu/gdt_load.o kernel/kmem.o cpu/interrupt.o cpu/gdt_load.o kernel/trap.o cpu/interrupt.o cpu/gdt_load.o kernel/low_level.o cpu/interrupt.o cpu/gdt_load.o kernel/paging.o cpu/interrupt.o cpu/gdt_load.o kernel/util.o cpu/interrupt.o cpu/gdt_load.o kernel/kernel.o cpu/interrupt.o cpu/gdt_load.o drivers/screen.o cpu/interrupt.o cpu/gdt_load.o drivers/keyboard.o cpu/interrupt.o cpu/gdt_load.o cpu/isr.o cpu/interrupt.o cpu/gdt_load.o cpu/idt.o cpu/interrupt.o cpu/gdt_load.o cpu/timer.o cpu/interrupt.o cpu/gdt_load.o cpu/gdt.o cpu/interrupt.o cpu/gdt_load.o libc/string.o cpu/interrupt.o cpu/gdt_load.o libc/math.o cpu/interrupt.o cpu/gdt_load.o common/ordered_map.o cpu/interrupt.o cpu/gdt_load.o
+# automatic
+# | := 
+# automatic
+# < := kernel/kernel_entry.o
+# automatic
+# ^ := kernel/kernel_entry.o kernel/kheap.o cpu/interrupt.o cpu/gdt_load.o kernel/kmem.o kernel/trap.o kernel/low_level.o kernel/paging.o kernel/util.o kernel/kernel.o drivers/screen.o drivers/keyboard.o cpu/isr.o cpu/idt.o cpu/timer.o cpu/gdt.o libc/string.o libc/math.o common/ordered_map.o
+# automatic
+# ? := kernel/kernel_entry.o kernel/kheap.o cpu/interrupt.o cpu/gdt_load.o kernel/kmem.o kernel/trap.o kernel/low_level.o kernel/paging.o kernel/util.o kernel/kernel.o drivers/screen.o drivers/keyboard.o cpu/isr.o cpu/idt.o cpu/timer.o cpu/gdt.o libc/string.o libc/math.o common/ordered_map.o
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
 #  recipe to execute (from 'Makefile', line 20):
 	ld -m elf_i386 -o $@ -Tlink.lds $^ --oformat binary
 
-# Not a target:
-cpu/isr.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+cpu/isr.o: cpu/isr.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h libc/math.h common/type.h common/system.h common/ordered_array.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'cpu/isr'
+#  Last modified 2022-02-05 17:22:49.06311447
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
+
+cpu/gdt_load.o: cpu/gdt_load.asm
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'cpu/gdt_load'
+#  Last modified 2022-02-05 17:22:48.811114466
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 26):
+	nasm $< -f elf -o $@
 
 # Not a target:
-cpu/gdt_load.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+libc/math.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-28 18:58:24.321010073
+#  File has been updated.
+#  Successfully updated.
+
+kernel/low_level.o: kernel/low_level.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h libc/math.h common/type.h common/system.h common/ordered_array.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'kernel/low_level'
+#  Last modified 2022-02-05 17:22:48.907114468
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
+
+kernel/kheap.o: kernel/kheap.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h libc/math.h common/type.h common/system.h common/ordered_array.h
+ 
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'kernel/kheap'
+#  Last modified 2022-02-05 17:22:48.851114467
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
+
+kernel/util.o: kernel/util.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h libc/math.h common/type.h common/system.h common/ordered_array.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'kernel/util'
+#  Last modified 2022-02-05 17:22:48.963114469
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
 
 # Not a target:
-kernel/low_level.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-kernel/kheap.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-kernel/util.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+cpu/timer.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-23 10:56:01.432220819
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 .DEFAULT:
@@ -388,44 +653,46 @@ kernel/util.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-kernel/kernel_entry.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+kernel/kernel_entry.o: kernel/kernel_entry.asm
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'kernel/kernel_entry'
+#  Last modified 2022-02-05 17:22:48.775114466
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 26):
+	nasm $< -f elf -o $@
 
 boot/boot_sect.bin: boot/boot_sect.asm
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'boot/boot_sect'
-#  File does not exist.
+#  Last modified 2022-02-05 17:22:48.775114466
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := boot/boot_sect.bin
-# automatic
-# % := 
-# automatic
-# * := boot/boot_sect
-# automatic
-# + := boot/boot_sect.asm
-# automatic
-# | := 
-# automatic
-# < := boot/boot_sect.asm
-# automatic
-# ^ := boot/boot_sect.asm
-# automatic
-# ? := boot/boot_sect.asm
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 23):
 	nasm $< -f bin -I '/home/yiheng/桌面/Master2/os/X86/boot/' -o $@
 
 # Not a target:
-libc/string.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+common/ordered_map.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-05 17:19:32.623111182
+#  File has been updated.
+#  Successfully updated.
+
+libc/string.o: libc/string.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h libc/math.h common/type.h common/system.h common/ordered_array.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'libc/string'
+#  Last modified 2022-02-05 17:22:49.171114472
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
+
+# Not a target:
+cpu/interrupt.asm:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-22 13:44:25.637417999
+#  File has been updated.
+#  Successfully updated.
 
 run: all
 #  Implicit rule search has not been done.
@@ -440,58 +707,177 @@ clean:
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 33):
 	rm -fr *.bin *.dis *.o os-image
-	rm -fr kernel/*.o boot/*.bin drivers/*.o cpu/*.o libc/*.o
+	rm -fr kernel/*.o boot/*.bin drivers/*.o cpu/*.o libc/*.o common/*.o
+
+kernel/kmem.o: kernel/kmem.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h libc/math.h common/type.h common/system.h common/ordered_array.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'kernel/kmem'
+#  Last modified 2022-02-05 17:22:48.871114467
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
+
+drivers/keyboard.o: drivers/keyboard.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h libc/math.h common/type.h common/system.h common/ordered_array.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'drivers/keyboard'
+#  Last modified 2022-02-05 17:22:49.03511447
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
 
 # Not a target:
-kernel/kmem.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+cpu/timer.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-21 12:22:35.706577718
+#  File has been updated.
+#  Successfully updated.
+
+cpu/gdt.o: cpu/gdt.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h libc/math.h common/type.h common/system.h common/ordered_array.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'cpu/gdt'
+#  Last modified 2022-02-05 17:22:49.147114472
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
 
 # Not a target:
-drivers/keyboard.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+drivers/screen.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-20 23:58:44.36864177
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-cpu/gdt.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+cpu/idt.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-22 12:16:52.117548199
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-kernel/trap.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+kernel/kheap.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-05 17:15:55.559107548
+#  File has been updated.
+#  Successfully updated.
+
+kernel/trap.o: kernel/trap.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h libc/math.h common/type.h common/system.h common/ordered_array.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'kernel/trap'
+#  Last modified 2022-02-05 17:22:48.887114468
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
 
 # Not a target:
-cpu/interrupt.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+kernel/kernel.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-24 16:36:36.528238491
+#  File has been updated.
+#  Successfully updated.
+
+cpu/interrupt.o: cpu/interrupt.asm
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'cpu/interrupt'
+#  Last modified 2022-02-05 17:22:48.807114466
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 26):
+	nasm $< -f elf -o $@
 
 # Not a target:
-kernel/paging.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+cpu/isr.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-23 10:19:02.288320457
+ 
+#  File has been updated.
+ 
+#  Successfully updated.
+ 
+
+# Not a target:
+common/system.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-28 18:24:56.732986965
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel/low_level.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-19 23:18:37.428641731
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+drivers/screen.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-28 18:52:25.273005941
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+cpu/idt.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-22 12:15:53.689549647
+#  File has been updated.
+#  Successfully updated.
+
+kernel/paging.o: kernel/paging.c kernel/paging.h kernel/low_level.h kernel/util.h kernel/kheap.h kernel/kmem.h drivers/screen.h drivers/keyboard.h cpu/isr.h cpu/idt.h cpu/timer.h cpu/gdt.h libc/string.h libc/math.h common/type.h common/system.h common/ordered_array.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'kernel/paging'
+#  Last modified 2022-02-05 17:22:48.943114468
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	gcc -m32 -fno-pie -fno-stack-protector -c $< -o $@
+
+# Not a target:
+kernel/util.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-20 22:40:41.764438656
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+common/type.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-22 10:55:57.761668507
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+cpu/isr.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-21 15:33:44.754277355
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+libc/string.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-23 10:49:26.29623856
+#  File has been updated.
+#  Successfully updated.
 
 # files hash-table stats:
-# Load=28/1024=3%, Rehash=0, Collisions=0/94=0%
+# Load=64/1024=6%, Rehash=0, Collisions=4/719=1%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 107 / storage = 1170 B / avg = 10 B
-# current buf: size = 8162 B / used = 1170 B / count = 107 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 182 / storage = 2183 B / avg = 11 B
+# current buf: size = 8162 B / used = 2183 B / count = 182 / avg = 11 B
 
-# strcache performance: lookups = 169 / hit rate = 36%
+# strcache performance: lookups = 778 / hit rate = 76%
 # hash-table stats:
-# Load=107/8192=1%, Rehash=0, Collisions=9/169=5%
-# Finished Make data base on Mon Jan 31 00:22:24 2022
+# Load=182/8192=2%, Rehash=0, Collisions=46/778=6%
+# Finished Make data base on Sat Feb  5 17:23:47 2022
 
  

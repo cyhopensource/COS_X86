@@ -1,5 +1,5 @@
 #ifndef _ORDERDE_ARRAY_H_
-#define _ORDERED_ARRAY_H_
+#define _ORDERDE_ARRAY_H_
 
 #include "type.h"
 

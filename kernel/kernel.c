@@ -5,6 +5,8 @@
 #include "../cpu/isr.h"
 #include "../cpu/gdt.h"
 #include "../cpu/timer.h"
+#include "kheap.h"
+#include "kmem.h"
 #include "paging.h"
 
 void test_addr(char* addr){
@@ -57,20 +59,33 @@ void main(){
     printk("Starting Kernel...\n");
     printk("......\n\n");
 
-    printk_hex(0xaa55);
+    printk_hex(0xbbaa55);
     printk("\n");
+
+    unsigned int a = kmalloc(8);
+    printk_hex(a); printk("\n");
+    unsigned int d = kmalloc(8);
+    printk_hex(d); printk("\n");
 
     // init os base system
     init_sys();
 
+    unsigned int b = malloc(8);
+    printk_hex(b); printk("\n");
+    unsigned int c = malloc(8);
+    printk_hex(c); printk("\n");
+    unsigned int e = malloc(8);
+    printk_hex(e); printk("\n");
+
     printk("Switching into User's Mode\n");
     printk("......\n\n");
 
-    unsigned int *ptr = (unsigned int*)0x00300000; // just 1024 pages(4KB) for now
-    unsigned int do_page_fault = *ptr;
+    //unsigned int *ptr = (unsigned int*)0x1000000; // just 1024 pages(4KB) for now
+    //unsigned int do_page_fault = *ptr;
 
     // init GUI system GNOME_based
 
+    
     //__asm__ ("int $0x3");
     //__asm__ ("int $0x5");
     //__asm__ ("int $0x22");

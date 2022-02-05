@@ -83,12 +83,12 @@ void printk(char* message){
     print_at(message, -1, -1);
 }
 
-void printk_hex(unsigned short num){
+void printk_hex(unsigned int num){
     char* msg_hex = 0;
     unsigned char hex, compte = 0;
     msg_hex[compte++] = '0';
     msg_hex[compte++] = 'x';
-    for(int i = 3; i >= 0; i--){
+    for(int i = 7; i >= 0; i--){
         hex = (num >> (4 * i)) & 0x0F;
         if(hex < 10)
             hex += 48;

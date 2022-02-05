@@ -1,6 +1,7 @@
 #include "ordered_array.h"
 #include "../kernel/kmem.h"
 #include "../kernel/util.h"
+#include "../drivers/screen.h"
 
 // considering as the c compiler
 u8int standard_lessthan_predicate(type_t a, type_t b){
@@ -10,7 +11,7 @@ u8int standard_lessthan_predicate(type_t a, type_t b){
 // max_size like c++ container
 ordered_array_t create_ordered_array(u32int max_size, lessthan_predicate_t less_than){
     ordered_array_t ret;
-    ret.array = (void*)kmalloc(max_size*sizeof(type_t));
+    ret.array = (type_t*)kmalloc(max_size*sizeof(type_t));
     memory_set(ret.array, 0, max_size*sizeof(type_t));
     ret.size = 0;
     ret.max_size = max_size;
@@ -21,6 +22,7 @@ ordered_array_t create_ordered_array(u32int max_size, lessthan_predicate_t less_
 ordered_array_t place_ordered_array(void* addr, u32int max_size, lessthan_predicate_t less_than){
     ordered_array_t ret;
     ret.array = (type_t*)addr;
+
     memory_set(ret.array, 0, max_size*sizeof(type_t));
     ret.size = 0;
     ret.max_size = max_size;
@@ -40,8 +42,9 @@ u8int insert_ordered_array(type_t item, ordered_array_t *array){
     while(iterator < array -> size && array -> less_than(array -> array[iterator], item))
         iterator++;
 
-    if(iterator == array->size && iterator)
+    if(iterator == array->size){
         array->array[array->size++] = item;
+    }
     else{
         type_t temp = array -> array[iterator];
         array -> array[iterator] = item;
@@ -62,7 +65,7 @@ type_t lookup_ordered_array(u32int i, ordered_array_t *array){
 }
 
 // i < size
-u8int removed_ordered_array(u32int i, ordered_array_t *array){
+u8int remove_ordered_array(u32int i, ordered_array_t *array){
     if(i >= array -> size)
         return 0;
     while(i < array -> size){

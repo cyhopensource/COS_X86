@@ -12,7 +12,7 @@
 
 // function interface.
 void printk(char* message);
-void printk_hex(unsigned short num);
+void printk_hex(unsigned int num);
 void clear_screen();
 
 #endif

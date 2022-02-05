@@ -9,6 +9,12 @@
         "keyboard.h": "c",
         "paging.h": "c",
         "gdt.h": "c",
-        "string.h": "c"
+        "string.h": "c",
+        "ordered_array.h": "c",
+        "kheap.h": "c",
+        "cstdlib": "c",
+        "*.tcc": "c",
+        "memory": "c",
+        "kmem.h": "c"
     }
 }

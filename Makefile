@@ -4,8 +4,8 @@ all : os-image
 run : all
 	qemu-system-i386 -fda os-image
 
-C_SOURCES=$(wildcard kernel/*.c drivers/*.c cpu/*.c libc/*.c)
-HEADERS=$(wildcard kernel/*.h drivers/*.h cpu/*.h libc/*.h common/*.h )
+C_SOURCES=$(wildcard kernel/*.c drivers/*.c cpu/*.c libc/*.c common/*.c)
+HEADERS=$(wildcard kernel/*.h drivers/*.h cpu/*.h libc/*.h common/*.h)
 
 OBJ=${C_SOURCES:.c=.o cpu/interrupt.o cpu/gdt_load.o}
 
@@ -31,4 +31,4 @@ kernel.bin : kernel/kernel_entry.o ${OBJ}
 
 clean:
 	rm -fr *.bin *.dis *.o os-image
-	rm -fr kernel/*.o boot/*.bin drivers/*.o cpu/*.o libc/*.o
+	rm -fr kernel/*.o boot/*.bin drivers/*.o cpu/*.o libc/*.o common/*.o
