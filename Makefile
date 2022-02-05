@@ -4,8 +4,8 @@ all : os-image
 run : all
 	qemu-system-i386 -fda os-image
 
-C_SOURCES=$(wildcard kernel/*.c drivers/*.c cpu/*.c libc/*.c common/*.c)
-HEADERS=$(wildcard kernel/*.h drivers/*.h cpu/*.h libc/*.h common/*.h)
+C_SOURCES=$(wildcard kernel/*.c drivers/*.c cpu/*.c libc/*.c common/*.c fs/*.c)
+HEADERS=$(wildcard kernel/*.h drivers/*.h cpu/*.h libc/*.h common/*.h fs/*.h)
 
 OBJ=${C_SOURCES:.c=.o cpu/interrupt.o cpu/gdt_load.o}
 
